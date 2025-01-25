@@ -49,3 +49,5 @@ pnpm run dev # Run dev env with --watch flag
 pnpm run build
 pnpm run start
 ```
+
+Add EDGEDB_INSTANCE and EDGEDB_SECRET_KEY environment variables in vercel. Please be aware that this repo is prepared for vercel deployments and it's only made for fun. Please do not use this on production.
