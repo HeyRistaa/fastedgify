@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
     "format": "prettier --write \"src/**/*.ts\"",
+    "prebuild": "pnpm generate interfaces && pnpm generate edgeql-js",
     "build": "rimraf dist && tsup src/index.ts",
     "start": "node dist/index.js"
   },
