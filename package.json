@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Fastify + EdgeDB TS starter repository",
   "engines": {
-    "node": ">=23.x"
+    "node": ">=22.x"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
