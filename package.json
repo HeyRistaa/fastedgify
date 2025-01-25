@@ -1,0 +1,40 @@
+{
+  "name": "fastify-typescript-starter",
+  "version": "0.0.1",
+  "description": "Fastify + EdgeDB TS starter repository",
+  "engines": {
+    "node": ">=23.x"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development tsx watch src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "build": "rimraf dist && tsup src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "author": "Milos Ristic <rista90@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@clerk/fastify": "^2.1.15",
+    "@fastify/cors": "^10.0.2",
+    "@types/bcrypt": "^5.0.2",
+    "@vercel/node": "^3.2.29",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "edgedb": "^1.5.12",
+    "fastify": "^5.2.1",
+    "fastify-type-provider-zod": "^4.0.2",
+    "svix": "^1.45.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@edgedb/generate": "^0.5.6",
+    "@types/node": "^22.10.10",
+    "cross-env": "^7.0.3",
+    "fastify-tsconfig": "^3.0.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.0.2",
+    "tsx": "^4.19.2"
+  }
+}

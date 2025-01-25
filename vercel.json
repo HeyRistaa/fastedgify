@@ -1,0 +1,9 @@
+{
+  "alias": ["fastedgify.vercel.app"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
+}
